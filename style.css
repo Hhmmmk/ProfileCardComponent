@@ -12,3 +12,128 @@
   --dgBlue: hsl(227, 10%, 46%);
   --dGray: hsl(0, 0%, 59%);
 }
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color:hsl(229, 23%, 23%);
+  background: var(--darkCyan);
+  overflow: hidden;
+}
+
+.bgTop {
+  position: fixed;
+  top: -50%;
+  left: -5%;
+}
+
+.bgBot {
+  position: fixed;
+  top: 50%;
+  right: -5%;
+}
+.card {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 2rem;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-border-radius: 2rem;
+  box-shadow: 20px 20px 20px 0 hsla(204, 21%, 53%, 0.39);
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.card__banner img{
+  width: 600px;
+  border-radius: 2rem 2rem 0 0;
+  -webkit-border-radius: 2rem 2rem 0 0;
+}
+
+.card__profPic {
+  position:absolute;
+  top: 192px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 108px;
+  height: 108px;
+  background: white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -webkit-transform: translate(-50%, 0);
+  align-content: center;
+  justify-items: center;
+}
+
+.card__profPic img {
+  position: relative;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.card__profInfo {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__profInfo p span {
+  font-weight: 400;
+  color: var(--dgBlue)
+}
+
+.card__profInfo .country {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--dgBlue)
+}
+
+.card__profStats {
+  display: flex;
+  height: 120px;
+  width: auto;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.card__profStats--count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card__profStats .key {
+  font-size: 1.2rem;
+  color: var(--dgBlue);
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+hr {
+  color: var(--dGray);
+}
+
+.attribution {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
