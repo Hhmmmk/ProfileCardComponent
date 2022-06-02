@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --vddBlue: hsl(229, 23%, 23%);
+  --dgBlue: hsl(227, 10%, 46%);
+  --dGray: hsl(0, 0%, 59%);
+}
